@@ -4,6 +4,7 @@ const tickets = (props) => {
     return (
         <div>
             <h1>These are tickets</h1>
+            <p>{props.user}</p>
             <form>
                 <label for="first name"> Name
                     <input type="text" name="first name" placeholder="First Name"/>
