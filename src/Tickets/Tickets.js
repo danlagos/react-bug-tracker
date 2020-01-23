@@ -40,6 +40,8 @@ const tickets = (props) => {
                     
                     </textarea>
                 </label>
+                <br></br>
+                <input type="submit" />
             </form>
         </div>
     )
