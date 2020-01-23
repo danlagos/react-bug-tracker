@@ -5,17 +5,41 @@ const tickets = (props) => {
         <div>
             <h1>These are tickets</h1>
             <form>
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="First Name"></input>
-                <input type="text"
-
-
-
-
-
-                {/* <label for ></label>
-                <label for="details">Details</label><br></br>
-                <input type="text" name="details" size="75" style={{height: "170px"}}></input> */}
+                <label for="first name"> Name
+                    <input type="text" name="first name" placeholder="First Name"/>
+                    <input type="text" name="last name" placeholder="Last Name"/>
+                </label>
+                <br></br>
+                <label for="email">Email
+                    <input type="text" name="Email" placeholder="Email" />
+                </label>
+                <br></br>
+                <label for="ticket type">Ticket Type
+                    <select>
+                        <option selected value="Feature Request">Feature Request</option>
+                        <option value="Comment">Comment</option>
+                        <option value="Bug">Bug</option>
+                    </select>
+                </label>
+                <br></br>
+                <label for="Priority">Priority
+                    <select>
+                        <option value="urgent">Urgent</option>
+                        <option value="high">High</option>
+                        <option selected value="normal">Normal</option>
+                        <option value="low">low</option>
+                    </select>
+                </label>
+                <br></br>
+                <label for="screen shot">Screenshot of Issue
+                    <input type="file" />
+                </label>
+                <br></br>
+                <label>Additional Details
+                    <textarea>
+                    
+                    </textarea>
+                </label>
             </form>
         </div>
     )
